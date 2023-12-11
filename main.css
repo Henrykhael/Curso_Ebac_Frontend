@@ -1,0 +1,143 @@
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header li 
+{
+    display: inline;
+    margin-left: 16px;
+}
+
+header li a
+{
+    color: black;
+    text-decoration:overline;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+body header h1
+{
+    margin-left: 20px;
+}
+
+body header nav
+{
+    margin-right: 100px;
+}
+
+body > header 
+{
+    background-color: orange;
+    padding: 16px 0;
+}
+
+header .container
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container
+{
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.article
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.article article img 
+{
+    /* height: 200px; */
+    width: 100%;
+}
+
+.article article {
+    width: 30%;
+}
+
+section
+{
+    padding: 16px 0;
+}
+
+section h2,
+.article article
+{
+    margin-bottom: 16px;
+}
+
+.article article h3
+{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.article article a
+{
+    color: #fff;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.article article a:hover
+{
+    text-decoration: underline;
+}
+
+.article article p,
+.article article a,
+.article article h3
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+.article article p
+{
+    text-align: justify;
+} 
+
+.article article h3 
+{
+    font-size: 20px;
+}
+
+#sports h2,
+#economy h2
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 32px;
+}
+
+#sports
+{
+    background-color: rgba(0, 255, 0, 0.1);
+}
+
+#sports .article article a
+{
+    background-color: #009432;
+}
+
+#economy
+{
+    background-color: #f8f59f;
+}
+
+#economy .article article a
+{
+    background-color: #ff9f1a;
+}
