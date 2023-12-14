@@ -4,6 +4,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    border: 0;
+    font-family: 'Lucida Sans',sans-serif;
 }
 
 header li 
@@ -14,26 +16,31 @@ header li
 
 header li a
 {
-    color: black;
+    color: white;
     text-decoration:overline;
     font-weight: bold;
     font-size: 20px;
+    font-family:monospace
 }
 
 body header h1
 {
-    margin-left: 20px;
+    color: white;
+    margin-left: 15vw;
+    font-family:monospace
 }
 
 body header nav
 {
-    margin-right: 100px;
+    margin-right: 15vw;
 }
 
 body > header 
 {
-    background-color: orange;
+    background-color: black;
     padding: 16px 0;
+    position: fixed;
+    width: 100vw;
 }
 
 header .container
@@ -42,27 +49,31 @@ header .container
     align-items: center;
     justify-content: space-between;
 }
-.container
+
+#body
 {
-    width: 1366px;
-    margin: 0 auto;
+    padding-top: 6rem;
 }
 
 .article
 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
 .article article img 
 {
-    /* height: 200px; */
-    width: 100%;
+    height: 250px;
+    width: 450px;
 }
 
-.article article {
-    width: 30%;
+.article article 
+{
+    width: 450px;
+    height: 600px;
 }
 
 section
@@ -70,10 +81,23 @@ section
     padding: 16px 0;
 }
 
+section time
+{
+    color: rgb(70, 69, 69);
+}
+
+h2
+{
+    margin-left: 15vw;
+    color: whitesmoke;
+    font-family:monospace;
+    font-size: 40px;
+}
+
 section h2,
 .article article
 {
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
 
 .article article h3
@@ -86,10 +110,10 @@ section h2,
 {
     color: #fff;
     padding: 8px;
-    display: inline-block;
+    display:inline-block;
     text-decoration: none;
     font-weight: bold;
-    margin-top: 8px;
+    margin-top: 15px;
 }
 
 .article article a:hover
@@ -97,47 +121,26 @@ section h2,
     text-decoration: underline;
 }
 
-.article article p,
-.article article a,
-.article article h3
-{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
-}
-
 .article article p
 {
     text-align: justify;
+    font-size: 20px;
 } 
 
 .article article h3 
 {
-    font-size: 20px;
+    font-size: 24px;
 }
 
-#sports h2,
-#economy h2
+#body
 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 32px;
+    background-image: linear-gradient(180deg, #5000b179, rgba(0, 0, 255, 0.5));
 }
 
-#sports
-{
-    background-color: rgba(0, 255, 0, 0.1);
-}
-
-#sports .article article a
-{
-    background-color: #009432;
-}
-
-#economy
-{
-    background-color: #f8f59f;
-}
-
+#tech .article article a,
+#geek .article article a,
+#sports .article article a,
 #economy .article article a
 {
-    background-color: #ff9f1a;
+    background-color: red;
 }
