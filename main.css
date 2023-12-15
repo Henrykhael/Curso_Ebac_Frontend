@@ -43,16 +43,16 @@ body > header
     width: 100vw;
 }
 
+#tech h2
+{
+    margin-top: 4rem;
+}
+
 header .container
 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-#body
-{
-    padding-top: 6rem;
 }
 
 .article
@@ -132,15 +132,42 @@ section h2,
     font-size: 24px;
 }
 
-#body
+#body #tech
 {
-    background-image: linear-gradient(180deg, #5000b179, rgba(0, 0, 255, 0.5));
+    background-color: #5000b179;
 }
 
-#tech .article article a,
-#geek .article article a,
-#sports .article article a,
-#economy .article article a
+#body #economy
+{
+    background-color: #3000b179;
+}
+
+#body #geek
+{
+    background-color: #1000b179;
+}
+
+#body #sports
+{
+    background-color: #000cb179;
+}
+
+#tech .article article a
 {
     background-color: red;
+}
+
+#economy .article article a
+{
+    background-color: rgb(255, 94, 0);
+}
+
+#geek .article article a
+{
+    background-color: rgb(255, 217, 0);
+}
+
+#sports .article article a
+{
+    background-color: rgba(179, 255, 0, 0.511);
 }
