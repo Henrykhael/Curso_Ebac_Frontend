@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Pratique</title>
+</head>
+<body>
+    <div class="container">
+        <h1>EBAC Banking</h1>
+        <h2>Estorno de transações</h2>
+        <form id="form">
+            <h4>Informações pessoais</h4>
+            <input type="text" required placeholder="Nome completo" id="full-name">
+            <input type="email" required placeholder="E-mail">
+            <input type="tel" required placeholder="telefone" id="telefone">
+            <h4>Informações da transação</h4>
+            <input type="date" required placeholder="Data">
+            <input type="number" required placeholder="Valor" id="valor">
+            <input type="number" required placeholder="Número de parcelas" id="parcelas">
+            <input type="number" required placeholder="ID da transação" id="id">
+            <h4>Moldalidade da transação</h4>
+            <select>
+                <option>Crédito</option>
+                <option>Débito</option>
+            </select>
+            <div id="termos">
+                <input type="checkbox" required name="termos" id="checkbox"><label for="checkbox">Reconheço que o estorno passará por uma análise.</label>
+            </div>
+            <div class="verificacao">
+                <h4>Prove que não é um robô</h4>
+                <p>Coloque um número no campo <b>A</b> que seja maior que um número no campo <b>B</b> </p>
+                <input type="number" required placeholder="Campo A" id="campoA">
+                <input type="number" required placeholder="Campo B" id="campoB">
+            </div>
+            <button type="submit">Enviar solicitação</button>
+            <p id="success-message">Solicitação de análise para estorno enviada com sucesso !!</p>
+            <p id="error-message">Os campos em vermelho precisam ser córigidos</p>
+        </form>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
